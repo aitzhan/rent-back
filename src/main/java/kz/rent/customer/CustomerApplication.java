@@ -1,12 +1,13 @@
-package com.aitzhan.rentback;
+package kz.rent.customer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RentApplication {
+public class CustomerApplication {
+
 	public static void main(String[] args) {
-		SpringApplication.run(RentApplication.class, args);
+		SpringApplication.run(CustomerApplication.class, args);
 	}
 
 }
