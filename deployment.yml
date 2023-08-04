@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rent-deployment
+  labels:
+    app: rent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rent
+  template:
+    metadata:
+      labels:
+        app: rent
+    spec:
+      containers:
+        - name: rent
+          image: rent-back:0.0.1
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
